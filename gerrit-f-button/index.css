@@ -1,0 +1,42 @@
+.f-button__frame {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 50%;
+  min-height: 120px;
+  max-height: 50%;
+
+  border: 1px solid #aaa;
+  padding: 10px;
+
+  background: white;
+  z-index: 6;
+
+  overflow: auto;
+}
+
+.f-button__table {
+  width: 100%;
+}
+
+.f-button__table tbody tr:nth-of-type(odd) {
+  background: #fafafa;
+}
+
+.f-button__table th {
+  text-align: left;
+}
+
+.f-button__table tbody tr:hover {
+  background: rgba(209, 245, 248, 0.32);
+}
+
+.f-button__table td, .f-button__table th {
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+.f-button__file--active {
+  font-weight: bold;
+}
