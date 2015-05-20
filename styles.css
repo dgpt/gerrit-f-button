@@ -1,0 +1,200 @@
+/* buttons */
+button[type=button],
+#change_actions button,
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-diffBase select {
+  border-width: 1px !important;
+  border-radius: 5px !important;
+  padding: 4px 6px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-popdown button[type=button] {
+  border: 1px solid #ddd !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-headerLine button,
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-sectionHeader button,
+.com-google-gerrit-client-change-Reviewers_BinderImpl_GenCss_style-openAdd,
+.com-google-gerrit-client-change-Resources-Style-button .com-google-gerrit-client-change-Reviewers_BinderImpl_GenCss_style-openAdd,
+#change_actions button {
+  background-color: #fff !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-headerLine button.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-highlight,
+#change_actions button.com-google-gerrit-client-change-Actions_BinderImpl_GenCss_style-submit {
+  background-color: #4d90fe !important;
+}
+
+
+/* popupContent */
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-replyBox {
+  box-shadow: 3px 4px 12px 0px rgba(0,0,0,0.3) !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* body */
+.gerritBody {
+  padding: 0 20px !important;
+}
+.gerritTopMenu {
+  padding: 5px 20px 0 15px !important;
+}
+
+/* top header */
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-headerLine {
+  margin: 10px 0 15px 0 !important;
+  border-bottom: 1px solid #ddd !important;
+  background-color: #f8f8f8 !important;
+  padding: 6px 15px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-subjectLine {
+  background: transparent !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-statusRight {
+  top: 7px !important;
+  right: 8px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoLine {
+  top: 5px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-popdown button {
+  margin-right: 8px !important;
+  border-radius: 5px !important;
+}
+
+/* commit */
+.com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-scroll {
+  background-color: #f8f8f8 !important;
+  padding: 10px 15px !important;
+  border: 1px solid #eee !important;
+}
+.com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-header {
+  margin: 15px 10px 0 10px !important;
+}
+.com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-header th {
+  padding: 3px !important;
+  font-weight: bold !important;
+}
+.com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-header td {
+  padding: 3px !important;
+}
+
+/* change info */
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoColumn table {
+  border: 1px solid #eee !important;
+  border-bottom: none !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoColumn th {
+  font-weight: bold !important;
+  padding: 3px 10px !important;
+  border-top: 1px solid #fff !important;
+  background-color: #f8f8f8 !important;
+  border-bottom: 1px solid #eee !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoColumn td {
+  padding: 3px 10px !important;
+  border-top: 1px solid #fff !important;
+  background-color: #f8f8f8 !important;
+  border-bottom: 1px solid #eee !important;
+  vertical-align: middle !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoColumn hr {
+  display:none !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user {
+  background: #fff !important;
+  border: 1px solid #ddd !important;
+  white-space: nowrap !important;
+  padding: 2px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user
+img.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-avatar {
+  margin-right: 3px !important;
+  border-radius: 5px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user button {
+  margin: 0 3px 0 4px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-labels {
+  width: 100% !important;
+  margin-top: 15px !important;
+  margin-left: 2px !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-labels th,
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-labels td {
+  padding: 2px 10px !important;
+}
+
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_ok {
+  color: #090 !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoColumn #change_actions {
+  padding-bottom: 7px !important;
+}
+
+/* related changes */
+.com-google-gerrit-client-change-RelatedChanges-RelatedChangesCss-row {
+  padding: 6px 0 !important;
+  line-height: 1 !important;
+}
+
+
+/* sect header */
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-sectionHeader {
+  margin: 20px 0 10px 0 !important;
+  border-bottom: 1px solid #ddd !important;
+  background-color: #f8f8f8 !important;
+  padding: 8px 15px !important;
+  font-size: 150% !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-sectionHeader
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-headerButtons {
+  top: 4px !important;
+  padding-top: 0 0 0 20px !important;
+  border: none !important;
+}
+.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-diffBase {
+  font-size: 50% !important;
+  vertical-align: baseline !important;
+  margin-left: 10px !important;
+}
+
+/* files */
+.com-google-gerrit-client-change-FileTable-FileTableCss-table th {
+  padding: 2px 4px !important;
+}
+.com-google-gerrit-client-change-FileTable-FileTableCss-table td {
+  padding: 2px 4px !important;
+  border-bottom: 1px solid #eee !important;
+  line-height: 18px !important;
+}
+.changeTable .com-google-gerrit-client-change-FileTable-FileTableCss-nohover td {
+  border: none !important;
+}
+
+/* history */
+.com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-contents {
+  margin-left: 38px !important;
+  padding: 5px 0 !important;
+}
+.com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-summary {
+  width: 850px !important;
+}
+.com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-avatar,
+.com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-summary,
+.com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-date {
+  top: 6px !important;
+}
+.com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-avatar {
+  left: 5px !important;
+  border-radius: 5px !important;
+}
+.com-google-gerrit-client-change-LineComment_BinderImpl_GenCss_style-box {
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.com-google-gerrit-client-change-LineComment_BinderImpl_GenCss_style-location {
+  top: 5px;
+}
+
+/* footer */
+#gerrit_btmmenu {
+  display: none !important;
+}
+
