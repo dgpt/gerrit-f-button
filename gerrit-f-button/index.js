@@ -239,11 +239,13 @@ timeout = setTimeout(function() {
 
   // for some reason, this isn't working in Greasemonkey
   poller = clearInterval(poller);
-}, 5000);
+}, 30000);
 
 poller = setInterval(function() {
-  if (window.Gerrit && window.jQuery) {
-    gerritFButton.install(window.Gerrit, window.jQuery);
+  var global = window.top || window;
+
+  if (global.Gerrit && global.jQuery) {
+    gerritFButton.install(global.Gerrit, global.jQuery);
     gerritFButton.installed = true;
 
     // for some reason, this isn't working in Greasemonkey
