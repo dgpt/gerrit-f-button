@@ -29,3 +29,4 @@ window.XGerrit = XGerrit;
 
 XGerrit.loadStylesheet('./index.css');
 XGerrit.loadScript('./gerrit-f-button/index.js');
+XGerrit.loadStylesheet('./gerrit-f-button/index.css');

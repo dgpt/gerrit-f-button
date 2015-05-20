@@ -155,14 +155,14 @@ function GerritFButton() {
   }
 
   return {
-    install: function(Gerrit, $, XGerrit) {
+    install: function(Gerrit, $) {
       var ui = new UI($);
       var context, cachedFiles;
 
       function fetchFilesAndRender(chNumber, rvNumber) {
         fetch(chNumber, rvNumber, function(files) {
           cachedFiles = files;
-          ui.render(cachedFiles, context.currentFile);
+          ui.render(cachedFiles, (context || {}).currentFile);
         });
       }
 
@@ -210,7 +210,7 @@ function GerritFButton() {
       });
 
       window.addEventListener('keyup', function(e) {
-        if (!context.chNumber) { // not viewing a change? forget it!
+        if (!context || !context.chNumber) { // not viewing a change? forget it!
           return;
         }
 
@@ -220,8 +220,6 @@ function GerritFButton() {
           }
         }
       });
-
-      XGerrit.loadStylesheet('./index.css');
     }
   };
 }
@@ -244,8 +242,9 @@ timeout = setTimeout(function() {
 }, 5000);
 
 poller = setInterval(function() {
-  if (window.Gerrit && window.jQuery && window.XGerrit) {
-    gerritFButton.install(window.Gerrit, window.jQuery, window.XGerrit);
+  if (window.Gerrit && window.jQuery) {
+    gerritFButton.install(window.Gerrit, window.jQuery);
+    gerritFButton.installed = true;
 
     // for some reason, this isn't working in Greasemonkey
     poller = clearInterval(poller);
