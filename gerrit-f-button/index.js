@@ -10,6 +10,10 @@
 /* eslint-env browser */
 /* eslint quotes:0, strict:0, no-underscore-dangle:0, no-console:0 */
 
+function getGlobal() {
+  return window.top || window;
+}
+
 function GerritFButton() {
   var KC_F = 70;
 
@@ -130,7 +134,9 @@ function GerritFButton() {
     }
 
     function getRemote(url, callback) {
-      window.$.ajax({
+      var global = getGlobal();
+
+      global.$.ajax({
         url: BASE_URL + url,
         type: 'GET',
         dataType: 'text',
@@ -158,6 +164,7 @@ function GerritFButton() {
     install: function(Gerrit, $) {
       var ui = new UI($);
       var context, cachedFiles;
+      var global = getGlobal();
 
       function fetchFilesAndRender(chNumber, rvNumber) {
         fetch(chNumber, rvNumber, function(files) {
@@ -209,7 +216,7 @@ function GerritFButton() {
         }
       });
 
-      window.addEventListener('keyup', function(e) {
+      global.addEventListener('keyup', function(e) {
         if (!context || !context.chNumber) { // not viewing a change? forget it!
           return;
         }
@@ -242,7 +249,7 @@ timeout = setTimeout(function() {
 }, 30000);
 
 poller = setInterval(function() {
-  var global = window.top || window;
+  var global = getGlobal();
 
   if (global.Gerrit && global.jQuery) {
     gerritFButton.install(global.Gerrit, global.jQuery);
